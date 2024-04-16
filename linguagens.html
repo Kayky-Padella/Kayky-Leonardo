@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Menu principal</title>
+     
+        <link rel="stylesheet"  href="style2.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+
+      .btn{
+          font-size: 22px;
+          font-weight: 700;
+      }
+      
+      .navbar {
+        padding-top: 22px;
+        padding-bottom: 22px; 
+        font-size: 20px;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+       font-weight: bold;
+      }
+
+      .textred {
+        
+        padding: 40px 10% 25px 10%; /* Cima, direita, baixo, esquerda*/
+        font-size: 19px;
+        
+      }
+
+      .tes1 {
+
+        font-weight: 600;
+      }
+
+
+      @media only screen and (max-width: 1000px) {
+
+.imgtm{
+  
+  margin-left: 1px;
+  text-align: center;
+  width: 100%;
+} 
+      }
+
+      .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black; /* Altera a cor das setinhas para preto */
+    }
+
+    .carousel-item {
+      text-align: center; /* Centraliza o conteúdo das perguntas */
+    }
+
+    .resposta {
+      margin-top: 20px; /* Adiciona margem acima das respostas */
+    }
+
+    .pergunta-container{
+
+      margin-left: 12%;
+      margin-right:11%;
+    }
+
+    .h5 {
+
+      text-align: justify;
+    }
+     </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+    <br>
+    
+    
+    <main>
+
+      
+      <div align="justify" class="textred">
+
+        <font size="6"><b>Prova de Linguagens</b></font>
+        <br><br>
+        A prova de linguagens, códigos e suas tecnologias contém questões das matérias de língua portuguesa, literatura, inglês ou espanhol, artes, educação física e tecnologias da informação. Uma boa interpretação de texto e análise textual são essenciais para se sair bem nessas disciplinas
+<br><br>
+      <b>Língua portuguesa</b>
+<br><br>
+        Especificamente em língua portuguesa, o Enem sempre aborda questões associadas à interpretação e à composição de gêneros textuais diversos, desde os não literários, de variadas esferas de comunicação, até os literários.
+<br><br>
+        Além disso, costumam estar presentes no exame tópicos gramaticais como morfologia, referente a classes de palavras; sintaxe, disciplina que estuda frases, orações e períodos; regência; concordância; pontuação; e semântica.
+
+<br>
+    
+<br><br>
+
+      <b>Literatura</b>
+<br><br>
+      O conhecimento de literatura é fundamental para que o candidato saia na frente na compreensão das questões. "Para além de dominar o que nós chamamos de periodização literária, ou seja, as características de cada escola literária, os principais autores e suas respectivas obras, o candidato precisa mobilizar esse conhecimento a favor do que o enunciado exige acerca do texto cobrado. Nesse sentido, é preciso entender o texto como uma produção comunicativa específica, com estruturas e finalidades próprias a cada desdobramento".
+<br><br>
+      Na prova de linguagens sempre há a cobrança de textos mistos, com mistura de linguagem verbal e não verbal, como charges, tirinhas e textos publicitários. "Compreender as diversas estratégias e os variados recursos utilizados na esfera comunicativa a partir das tipologias, ou tipos textuais (narração, descrição, exposição, argumentação, injunção) é muito importante também para realizar um bom exame".
+      
+
+<br>
+    
+<br><br>
+
+      <b>Arte</b>
+<br><br>
+      A prova de artes contém aproximadamente cinco questões. Segundo a professora do Jovem de Expressão, Luiza Paraladino, a linha cronológica do certame abrange uma enorme diversidade de produções artísticas. "Todavia, é possível observar, nas últimas provas do Enem, uma inclinação para as práticas artísticas desenvolvidas ao longo do século XX, com foco na passagem do moderno para o contemporâneo. Em vez de decorar dados biográficos e técnicos de um determinado artista ou obra, o estudante deve levar em consideração o contexto político, social e cultural dos movimentos artísticos, em especial, das vanguardas modernas e da arte contemporânea. Acima de tudo, é crucial que os candidatos tenham habilidades de leitura analítica, estética e interpretativa das obras de arte".
+<br>
+    
+<br><br>
+
+      <b>Língua Estrangeira</b>
+<br><br>
+      A prova de língua estrangeira também é composta por cinco questões, o que equivale a 11% do total. Que pode ser 5 questões de Língua Inglesa, ou de Língua Espanhola, que fica a escolha do candidato, na fase de inscrição da prova. A maioria dos candidatos, escolhem a língua inglesa, e nas últimas edições do Enem, a gramática do idioma tem ficado de lado e a interpretação de texto é o tópico mais cobrado.
+<br><br>
+      Não se esqueça de sempre estar por dentro das notícias atuais, pois o Enem adora abordar temas sobre atualidades na área de língua inglesa. Faça leituras diárias de notícias em inglês para expandir seu vocabulário sobre questões de política internacional. Para isso, recomendo os sites da BBC News, The New York Time e National Geographic
+<br><br>
+      É preciso ficar atento a peguinhas na hora de ler os textos, especialmente os chamados false cognates, falsos cognatos em português, que são palavras que apresentam grafia parecida nos dois idiomas, porém com significados diferentes
+<br><br>
+      O Enem costumam trazer textos híbridos, compostos por texto e imagem. Na maioria das vezes, essa imagem é uma tirinha, problematizando alguma situação de forma irônica. É preciso cuidado para não fazer extrapolação da interpretação e marcar a alternativa errada. O texto é seu amigo e as respostas que procura estão nele, então relaxe sua mente e se conecte com o que está escrito e com as imagens.
+<br><br>
+        <div class="tes1">Preparamos agora um teste com 10 questões que mais caem da área de linguages nas provas do ENEM:</div>
+    </main>
+    
+
+    <br><br>
+
+    <div id="carouselExampleControls" data-interval="false" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="pergunta-container">
+
+            <br><h4><b>Questão 1</b></h4><br>
+            <h5 ><p align="justify">
+              
+              Ser cronista, Sei que não sou, mas tenho meditado ligeiramente no assunto.<br><br>
+              
+              Crônica é um relato? É uma conversa? É um resumo de um estado de espírito? Não sei, pois antes de começar a escrever para o Jornal do Brasil, eu só tinha escrito romances e contos.<br><br>
+              
+              E também sem perceber, à medida que escrevia para aqui, ia me tornando pessoal demais, correndo o risco de em breve publicar minha vida passada e presente, o que não pretendo. Outra coisa notei: basta eu saber que estou escrevendo para o jornal, isto é, para algo aberto facilmente por todo o mundo, e não para um livro, que só é aberto por quem realmente quer, para que, sem mesmo sentir, o modo de escrever se transforme. Não é que me desagrade mudar, pelo contrário. Mas queria que fossem mudanças mais profundas e interiores que não viessem a se refletir no escrever. Mas mudar só porque isso é uma coluna ou uma crônica? Ser mais leve só porque o leitor assim o quer? Divertir? Fazer passar uns minutos de leitura? E outra coisa: nos meus livros quero profundamente a comunicação profunda comigo e com o leitor. Aqui no jornal apenas falo com o leitor e agrada-me que ele fique agradado. Vou dizer a verdade: não estou contente.<br><br>
+              
+              LISPECTOR, C. In: A descoberta do mundo. Rio de Janeiro: Rocco, 1999.<br><br>
+              
+              No texto, ao refletir sobre a atividade de cronista, a autora questiona características do gênero crônica, como:<br><br>
+              
+              a) relação distanciada entre os interlocutores.<br>
+              b) articulação de vários núcleos narrativos.<br>
+              c) brevidade no tratamento da temática.<br>
+              d) descrição minuciosa dos personagens.<br>
+              e) público leitor exclusivo.<br><br>
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(1)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> c) brevidade no tratamento da temática.
+                No texto acima, Clarice Lispector expõe as suas perspectivas sobre as crônicas. Ao questionar-se se a crônica seria um relato, uma conversa ou um resumo, o texto dá indicações da questão da brevidade.<br><br>
+
+                Em seguida, Clarice fala na leveza do texto e até em "passar uns minutos de leitura", enquanto nos seus livros, Clarice expõe o seu desejo de se comunicar profundamente com o leitor, o que a crônica não permite fazer, justamente tendo em conta o fato de a crônica ser um texto curto, breve.
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+            
+            <br><h4><b>Questão 2</b></h4><br>
+            <h5 ><p align="justify">
+
+              Firmo, o vaqueiro<br><br>
+        No dia seguinte á hora em que saía o gado, estava eu debruçado á varanda quando vi o cafuzo que preparava o animal viajeiro:
+        — Raimundinho, como vai ele?...<br>
+        Do longe apontou a palhoça.<br>
+        — Sim.<br>
+        O braço caiu-lhe, olhou-me algum tempo comovido; depois, saltando para o animal, levou o polegar à boca fazendo estalar a unha nos dentes: "As quatro horas da manhã... Atirei um verso e disse, para bulir com ele: Pega, velho! Não respondeu. Tio Firmo, mesmo velho e doente, não era homem para deixar um verso no chão...Fui ver, coitadol... estava morto”. E deu de esporas para que eu não lhe visse as lágrimas.<br><br>
+        NETTO, C. In: MARCHEZAN.L.G (Og). O conto regionalista. São Paulo: Marina Fontes, 2009.<br><br>
+        A passagem registra um momento em que a expressividade lírica é reforçada pela <br><br>
+        
+        a) plasticidade da imagem do rebanho reunido.<br>
+        b) sugestão da firmeza do sertanejo ao arrear o cavalo.<br>
+        c) situação de pobreza encontrada nos sertões brasileiros.<br>
+        d) afetividade demonstrada ao noticiar a morte do cantador<br>
+        e) preocupação do vaqueiro em demonstrar sua virilidade.<br><br>
+            </p>
+            </h5>
+
+            <button class="btn btn-primary" onclick="mostrarResposta(2)">Ver Resposta</button>
+            <div class="resposta" id="resposta2" style="display: none;">
+              <h5 ><br><p align="justify"><b>Resposta correta:</b> d) afetividade demonstrada ao noticiar a morte do cantador.</p></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+            
+            <br><h4><b>Questão 3</b></h4><br>
+            <h5 ><p align="justify">
+
+              (Enem-2018)<br><br>
+
+              <b>TEXTO I</b><br><br>
+
+              Também chamados impressões ou imagens fotogramáticas […], os fotogramas são, numa definição genérica, imagens realizadas sem a utilização da câmera fotográfica, por contato direto de um objeto ou material com uma superfície fotossensível exposta a uma fonte de luz. Essa técnica, que nasceu junto com a fotografia e serviu de modelo a muitas discussões sobre a ontologia da imagem fotográfica, foi profundamente transformada pelos artistas da vanguarda, nas primeiras décadas do século XX. Representou mesmo, ao lado das colagens, fotomontagens e outros procedimentos técnicos, a incorporação definitiva da fotografa à arte moderna e seu distanciamento da representação figurativa. <br><br>
+
+              No fotograma de Man Ray, o “distanciamento da representação figurativa” a que se refere o Texto I manifesta-se na:<br><br>
+
+              a) ressignificação do jogo de luz e sombra, nos moldes surrealistas.<br>
+              b) imposição do acaso sobre a técnica, como crítica à arte realista.<br>
+              c) composição experimental, fragmentada e de contornos difusos.<br>
+              d) abstração radical, voltada para a própria linguagem fotográfica.<br>
+              e) imitação de formas humanas, com base em diferentes objetos.<br><br>
+
+            </p>
+            </h5>
+
+            <button class="btn btn-primary" onclick="mostrarResposta(3)">Ver Resposta</button>
+            <div class="resposta" id="resposta3" style="display: none;">
+              <h5 ><br><p align="justify"><b>Resposta correta:</b> c) composição experimental, fragmentada e de contornos difusos.<br><br>
+
+            A rayografia surge na história da arte como um processo experimental em que fotógrafos/artistas estavam criando novas composições, usando como instrumento os elementos que fazem parte do universo fotográfico<br><br>
+              </h5></p></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 4</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem 2009)O sertão e o sertanejo<br><br>
+
+              Ali começa o sertão chamado bruto. Nesses campos, tão diversos pelo matiz das cores, o capim crescido e ressecado pelo ardor do sol transforma-se em vicejante tapete de relva, quando lavra o incêndio que algum tropeiro, por acaso ou mero desenfado, ateia com uma faúlha do seu isqueiro. Minando à surda na touceira, queda a vívida centelha. Corra daí a instantes qualquer aragem, por débil que seja, e levanta-se a língua de fogo esguia e trêmula, como que a contemplar medrosa e vacilante os espaços imensos que se alongam diante dela. O fogo, detido em pontos, aqui, ali, a consumir com mais lentidão algum estorvo, vai aos poucos morrendo até se extinguir de todo, deixando como sinal da avassaladora passagem o alvacento lençol, que lhe foi seguindo os velozes passos. Por toda a parte melancolia; de todos os lados tétricas perspectivas. É cair, porém, daí a dias copiosa chuva, e parece que uma varinha de fada andou por aqueles sombrios recantos a traçar às pressas jardins encantados e nunca vistos. Entra tudo num trabalho íntimo de espantosa atividade. Transborda a vida.<br><br>
+
+              TAUNAY, A. Inocência. São Paulo: Ática, 1993 (adaptado).<br><br>
+
+              O romance romântico teve fundamental importância na formação da ideia de nação. Considerando o trecho acima, é possível reconhecer que uma das principais e permanentes contribuições do Romantismo para construção da identidade da nação é a:<br><br>
+
+              A) possibilidade de apresentar uma dimensão desconhecida da natureza nacional, marcada pelo subdesenvolvimento e pela falta de perspectiva de renovação.<br>
+              B) consciência da exploração da terra pelos colonizadores e pela classe dominante local, o que coibiu a exploração desenfreada das riquezas naturais do país.<br>
+              C) construção, em linguagem simples, realista e documental, sem fantasia ou exaltação, de uma imagem da terra que revelou o quanto é grandiosa a natureza brasileira.<br>
+              D) expansão dos limites geográficos da terra, que promoveu o sentimento de unidade do território nacional e deu a conhecer os lugares mais distantes do Brasil aos brasileiros.<br>
+              E) valorização da vida urbana e do progresso, em detrimento do interior do Brasil, formulando um conceito de nação centrado nos modelos da nascente burguesia brasileira.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(4)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> D) expansão dos limites geográficos da terra, que promoveu o sentimento de unidade do território nacional e deu a conhecer os lugares mais distantes do Brasil aos brasileiros.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 5 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem/2018)<br><br>
+
+                Certa vez minha mãe surrou-me com uma corda nodosa que me pintou as costas de manchas sangrentas. Moído, virando a cabeça com dificuldade, eu distinguia nas costelas grandes lanhos vermelhos. Deitaram-me, enrolaram-me em panos molhados com água de sal – e houve uma discussão na família. Minha avó, que nos visitava, condenou o procedimento da filha e esta afligiu-se. Irritada, ferira-me à toa, sem querer. Não guardei ódio a minha mãe: o culpado era o nó.<br><br>
+
+                RAMOS, G. Infância. Rio de Janeiro. Record, 1998.<br><br>
+
+                Num texto narrativo, a sequência dos fatos contribui para a progressão temática. No fragmento, esse processo é indicado pela:<br><br>
+
+                a) alternância das pessoas do discurso que determinam o foco narrativo.<br>
+                b) utilização de formas verbais que marcam tempos narrativos variados.<br>
+                c) indeterminação dos sujeitos de ações que caracterizam os eventos narrados.<br>
+                d) justaposição de frases que relacionam semanticamente os acontecimentos narrados.<br>
+                e) recorrência de expressões adverbiais que organizam temporalmente a narrativa.<br><br>
+
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(5)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) utilização de formas verbais que marcam tempos narrativos variados.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 6</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem/2018)<br><br>
+
+                1984 (excerpt)<br><br>
+
+                'Is it your opinion, Winston, that the past has real existence?' [...] O'Brien smiled faintly. 'I will put it more precisely. Does the past exist concretely, in space? Is there somewhere or other a place, a world of solid objects, where the past is still happening?'<br><br>
+                'No.'<br><br>
+                'Then where does the past exist, if at all?'<br><br>
+                'In records. It is written down.'<br><br>
+                'In records. And — —?'<br><br>
+                'In the mind. In human memories.'<br><br>
+                'In memory. Very well, then. We, the Party, control all records, and we control all memories. Then we control the past, do we not?'<br><br>
+
+                ORWELL. G, Nineteen Eighty-Four. New York: Signet Classics, 1977<br><br>
+
+                O romance 1984 descreve os perigos de um Estado totalitário. A ideia evidenciada nessa passagem é que o controle do Estado se dá por meio do(a)<br><br>
+
+                a) boicote a ideais libertários.<br>
+                b) veto ao culto das tradições.<br>
+                c) poder sobre memórias e registros.<br>
+                d) censura a produções orais e escritas.<br>
+                e) manipulação de pensamentos individuais.<br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(6)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> C) poder sobre memórias e registros.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 7</b></h4><br>
+            <h5 ><p align="justify">
+              
+              Enem - 2019)<br><br>
+
+              Para que a passagem da produção ininterrupta de novidade a seu consumo seja feita continuamente, há necessidade de mecanismos, de engrenagens.<br><br>
+              
+              Uma espécie de grande máquina industrial, incitante, tentacular, entra em ação. Mas bem depressa a simples lei da oferta e da procura segundo as necessidades não vale mais: é preciso excitar a demanda, excitar o acontecimento, provocá-lo, espicaçá-lo, fabricá-lo, pois a modernidade se alimenta disso.<br><br>
+              
+              CAUQUELIN, A. Arte contemporânea: uma introdução. São Paulo: Martins Fontes, 2005 (adaptado).<br><br>
+              
+              No contexto da arte contemporânea, o texto da autora Anne Cauquelin reflete ações que explicitam:<br><br>
+              
+              a) métodos utilizados pelo mercado de arte.<br>
+              b) investimentos realizados por mecenas.<br>
+              c) interesses do consumidor de arte.<br>
+              d) práticas cotidianas do artista.<br>
+              e) fomentos públicos à cultura.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(7)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> A) métodos utilizados pelo mercado de arte.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 8 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem2011) Capítulo primeiro / Óbito do autor<br><br>
+
+              Algum tempo hesitei se devia abrir estas memórias pelo princípio ou pelo fim, isto é, se poria em primeiro lugar o meu nascimento ou a minha morte. Suposto o uso vulgar seja começar pelo nascimento, duas considerações me levaram a adotar diferente método: a primeira é que eu não sou propriamente um autor defunto, mas um defunto autor, para quem a campa foi outro berço; a segunda é que o escrito ficaria assim mais galante e mais novo. Moisés, que também contou a sua morte, não a pôs no introito, mas no cabo: diferença radical entre este livro e o Pentateuco.<br><br>
+              
+              Machado de Assis, Memórias Póstumas de Brás Cubas.
+              Contribui decisivamente para o efeito expressivo do texto o fato de o narrador exagerar em sua:<br><br>
+              
+              A) construção verbal paratática.
+              B) estruturação argumentativa antitética.<br>
+              C) utilização de elipses e zeugmas.<br>
+              D) exploração de recursos sonoros.<br>
+              E) mistura de variedades linguísticas.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(8)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b>B) estruturação argumentativa antitética.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 9</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem/2018)<br><br>
+
+                TEXTO I<br><br>
+
+                A Free World-class Education for Anyone Anywhere<br><br>
+
+                The Khan Academy is an organization on a mission.
+                We're a not-for-profit with the goal of changing education for the better by providing a free world-class education to anyone anywhere. All of the site's resources are available to anyone. The Khan Academy's materials and resources are available to you completely free of charge.<br><br>
+
+                Disponível em www.khanacademy.org. Acesso em: 24 fev. 2012 (adaptado)<br><br>
+
+                TEXTO II<br><br>
+
+                I didn't have a problem with Khan Academy site until very recently. For me, the problem is the way Khan Academy is being promoted. The way the media sees it as “revolutionizing education”. The way people with power and Money view education as simply “sit-and-get”, i.e., teaching is telling and learning is listening, then Khan Academy is way more eficiente than classroom lecturing. Khan Academy does it better. But TRUE progressive educators, TRUE education visionaries and revolutionaries don't want to do these things better. We want to DO BETTER THINGS.<br><br>
+
+                Com o impacto das tecnologias e a ampliação das redes sociais, consumidores encontram na internet possibilidades de opinar sobre serviços oferecidos. Nesse sentido, o segundo texto, que é um comentário sobre o site divulgado no primeiro, apresenta a intenção do autor de:<br><br>
+
+                a) elogiar o trabalho proposto para a educação.<br>
+                b) era tecnológica. B reforçar como a mídia pode contribuir para revolucionar a educação.<br>
+                c) chamar a atenção das pessoas influentes para o significado da educação.<br>
+                d) destacar que o site tem melhores resultados do que a educação tradicional.<br>
+                e) criticar a concepção de educação em que se baseia a organização.<br><br>
+
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(9)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> E) criticar a concepção de educação em que se baseia a organização.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 10</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem/2018)<br><br>
+
+              Mais big do que bang<br><br>
+
+              A comunidade científica mundial recebeu, na semana passada, a confirmação oficial de uma descoberta sobre a qual se falava com enorme expectativa há alguns meses. Pesquisadores do Centro de Astrofísica Harvard-Smithsonian revelaram ter obtido a mais forte evidência até agora de que o universo em que vivemos começou mesmo pelo Big Bang, mas este não foi explosão, e sim uma súbita expansão de matéria e energia infinitas concentradas em um ponto microscópico que, sem muitas opções semânticas, os cientistas chamam de “singularidade”. Essa semente cósmica permanecia em estado latente e, sem que exista ainda uma explicação definitiva, começou a inchar rapidamente [...]. No intervalo de um piscar de olhos, por exemplo, seria possível, portanto, que ocorressem mais de 10 trilhões de Big Bangs.<br><br>
+
+              ALLEGRETTI, F. Veja, 26 mar. 2014 (adaptado).<br><br>
+
+              No título proposto para esse texto de divulgação científica, ao dissociar os elementos da expressão Big Bang, a autora revela a intenção de<br><br>
+
+              a) evidenciar a descoberta recente que comprova a explosão de matéria e energia.<br>
+              b) resumir os resultados de uma pesquisa que trouxe evidências para a teoria do Big Bang.<br>
+              c) sintetizar a ideia de que a teoria da expansão de matéria e energia substitui a teoria da explosão.<br>
+              d) destacar a experiência que confirma uma investigação anterior sobre a teoria de matéria e energia.<br>
+              e) condensar a conclusão de que a explosão de matéria e energia ocorre em um ponto microscópico.<br><br>
+
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(10)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> 
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        
+      </a>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function mostrarResposta(numero) {
+        var resposta = document.getElementById('resposta' + numero);
+        var botao = document.querySelector('[onclick="mostrarResposta(' + numero + ')"]');
+        if (resposta.style.display === 'none') {
+          resposta.style.display = 'block';
+          botao.textContent = 'Ocultar Resposta';
+        } else {
+          resposta.style.display = 'none';
+          botao.textContent = 'Ver Resposta';
+        }
+      }
+    </script>
+    
+
+    </div>
+
+
+
+
+    <br><br>
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function mostrarResposta(numero) {
+        var resposta = document.getElementById('resposta' + numero);
+        if (resposta.style.display === 'none') {
+          resposta.style.display = 'block';
+        } else {
+          resposta.style.display = 'none';
+        }
+      }
+    </script>  
+  
+  </body>
+    </html>
+   

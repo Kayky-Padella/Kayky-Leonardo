@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+        
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+
+      .btn{
+          font-size: 22px;
+          font-weight: 700;
+      }
+      
+      .navbar {
+        padding-top: 22px;
+        padding-bottom: 22px; 
+        font-size: 20px;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+       font-weight: bold;
+      }
+     </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="comunicante">
+
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Métodos e Táticas de Estudo, para o ENEM!</h1>
+              <p class="text4" align ="justify">      Métodos de estudo são estratégias que ajudam você a ser mais eficiente na hora de aprender algo. Existem diversos tipos disponíveis, de resumos escritos à desenhos. <br>
+                <br>
+                      Inclusive, é possível criar o seu próprio método de estudo, fazendo algo completamente exclusivo e que funcione pra você. Legal, né?<br>
+                      Por que aderir a um método de estudo?<br>
+                      Estudar é um processo que exige esforço do nosso cérebro, dedicação do aluno e tempo disponível. Esses fatores conjugados fazem com que muitas pessoas vejam o ato de aprender como enfadonho e complicado.<br>
+                      <br>
+                      Tendo isso em mente, os métodos de estudo surgem para simplificar esse processo. Eles ajudam você a:<br>
+                      <br>
+                      Aprender de modo mais rápido;
+                      Ter mais foco, evitando a procrastinação;
+                      Organizar seu cronograma de estudos, o que ajuda na gestão de tempo, principalmente das pessoas que possuem uma rotina agitada;<br>
+                      Ter um conhecimento de longo prazo.<br>
+                      Os 10 métodos de estudo mais eficientes<br>
+                      Agora você já sabe o que são métodos de estudo e como eles são importantes. Então, chegou o momento de entender melhor quais as dez estratégias mais populares e, assim, poder colocá-las em prática na sua rotina.<br>
+                      <br><br>
+
+                      <b>1. Mapa mental</b><br><br>
+
+                      O mapa mental é um ótimo método para quem aprende de forma mais visual. Ele funciona como um diagrama, em que no centro aparece o tema principal do conteúdo a ser estudado. A partir daí, você cria ramificações, associando imagens, palavras-chaves ou expressões ao elemento inicial.
+                      <br>
+                             <center> <img src="imagem/mapa.jpeg" width="90%"></center>
+                      <br>
+                      <p class="text4" align ="justify"> Você pode fazer um mapa mental em uma folha de caderno, usando canetas coloridas e marcadores, ou criá-lo usando plataformas digitais, como é o caso da Mind Meister.
+
+                      <br><br><b> 2. Resumos e fichamentos</b><br><br>
+                      O resumo é um dos métodos de estudo mais populares entre os alunos. Ele consiste, basicamente, em apresentar um conteúdo superficialmente, porém mantendo todas as suas ideias principais.
+                      <br><br>
+                      Os resumos são ótimos para fixar as informações que leu, além de servirem como material de revisão.
+                      <br><br>
+                      Já os fichamentos, reproduzem todo o conteúdo que você acabou de estudar, não apenas as partes principais. Todavia, essa “reprodução” precisa ser feita com as suas próprias palavras. Então, nada de copiar trechos do livro ou da apostila.
+                      <br><br>
+                      Outro ponto importante é que o fichamento não é feito em forma de texto corrido. Os blocos de texto devem ser separados por ideias, seguindo a mesma ordem lógica do material original.
+                      <br><br><b>3. Técnica Pomodoro</b><br><br>
+                      Um bom método de estudo pode fazer toda a diferença na sua produtividade e aprendizado!<br><br>
+
+                      A Técnica Pomodoro funciona alternando momentos de foco intenso com períodos de relaxamento.
+                      <br><br>
+                      <center> <img src="imagem/pomodoro.jpg" width="80%"></center>
+                      <br><br>
+                      <p class="text4" align ="justify">De acordo com o método original, cada pomodoro deve durar 25 minutos e, durante esse tempo, você precisa concentrar-se plenamente na atividade que está desenvolvendo. Finalizado o ciclo, deve fazer uma pausa de 5 minutos. Depois, passar mais 25 minutos concentrada e, em seguida, dar outra pausa.
+                      Ao finalizar quatro pomodoros, seu tempo de descanso deve ser maior, de 15 minutos. E aí, todo o processo recomeça.<br><br>
+
+                      Na prática, você pode modificar os tempos de foco e de pausa para o que se ajustar melhor ao seu fluxo de estudo. O importante é apenas manter a alternância e dedicar um período maior para os momentos de concentração. 
+
+                      <br><br><b>4. Mnemônica</b><br><br>
+
+                      Menemônica é um dos métodos de estudo mais populares apesar do nome complicado. Essa técnica consiste em criar frases, palavras ou até músicas para associar informações.
+                      <br><br>
+                      <center> <img src="imagem/mnemonico.jpg" width="80%"></center>
+                      <br><br>
+                      <p class="text4" align ="justify"> Um exemplo antigo de uso da mnemônica, que talvez você ou seus pais conheçam, é a seguinte frase: “minha velha traga meu jantar: sopa, uva e nozes”. Aqui, a primeira letra de cada palavra representa os planetas: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
+
+                      <br><br><b>5. Intercalação de matérias</b><br><br>
+
+                      O estudo intercalado funciona como o nome sugere, ou seja, alternando as disciplinas que você estuda. Assim, em vez de passar quatro horas apenas aprendendo matemática, por exemplo, você divide esse tempo: 2h para biologia e 2h para matemática.<br><br>
+                      Isso ajuda o cérebro a não se cansar, nem entrar no piloto automático, além de evitar a procrastinação. Outra grande vantagem é que fica possível otimizar seu tempo de estudo ao longo da semana.  
+
+                      <br><br><b>6. Testes práticos</b><br><br>
+
+                      Os testes práticos nada mais são do que a resolução de exercícios, simulados e provas antigas.
+                      
+                      <br>
+                      <br>
+                      <center> <img src="imagem/test.png" width="90%"></center>
+                      <br>
+                      <br>
+
+                      <p class="text4" align ="justify">Este é um dos métodos de estudo mais eficientes, pois força seu cérebro a pensar bastante nas informações previamente estudadas para responder cada uma das perguntas. Além disso, faz com que você consiga medir seu nível de conhecimento atual.
+
+                      <br><br><b>7. O pensamento difuso</b><br><br>
+
+                      Nosso cérebro trabalha de duas formas: o modo focado e o modo difuso. <br><br>
+
+                      O primeiro caso corresponde àqueles momentos em que você está completamente concentrada em algo. Por exemplo, quando está lendo um capítulo complexo de geografia.
+                      <br><br>
+                      Já o modo difuso, é quando os pensamentos do cérebro podem fluir livremente, criando conexões variadas. Ele aparece nos momentos de relaxamento, quando você está jogando, vendo um filme ou fazendo um passeio.
+                      <br><br>
+                      Investir no pensamento difuso como método de estudo é ideal para as situações em que já leu e releu um material, mas ainda não conseguiu compreendê-lo completamente. O melhor a fazer nesse caso é se distrair, pois será mais fácil para o cérebro processar as informações novas.
+
+                      <br><br><b>8. Método Robinson (EPL2R)</b><br><br>
+                      Este método foi criado por um psicólogo americano chamado Francis Pleasant Robinson e é baseado nos estágios da leitura. Ou seja, a ideia é você começar seu processo de aprendizagem fazendo uma análise superficial do conteúdo e ir se aprofundando aos poucos.
+                        
+                      <br>
+                      <br>
+                      <center> <img src="imagem/robson.png" width="90%"></center>
+                      <br>
+                      <br>
+                      <p class="text4" align ="justify">Tendo esse conceito geral em mente, passamos para os detalhes da técnica e a compreensão da sua sigla:
+                      <br><br>
+                      E: explorar, é o momento de fazer uma leitura básica do conteúdo, analisando apenas resumo, títulos e subtítulos; <br>
+                      P: perguntar, é a hora de elaborar os questionamentos que você deseja conseguir responder depois de ler o conteúdo;<br>
+                      L: ler, aqui é a parte do estudo propriamente dito e que exige bastante concentração;<br>
+                      R: rememorar, momento de fazer anotações, resumos ou um fichamento sobre tudo o que aprendeu;<br>
+                      R: repassar é a revisão, que deve ser feita regularmente para manter as informações vivas na sua mente.
+                      <br><br><b>9. A auto explicação e a auto interrogação</b> <br><br>
+                      Alunos estudando em grupo
+                      Alguns métodos de estudo podem funcionar melhor do que outros pra você, já que isso varia de pessoa pra pessoa.
+                      Estas duas técnicas são bem simples, mas bastante eficientes.
+                      <br><br>
+                      No caso da auto explicação, depois que você ler um capítulo, tente dar uma aula para si mesma sobre o que aprendeu. Isso fará com que o seu cérebro crie conexões entre as informações e retenha melhor o conteúdo.
+                      <br><br>
+                      Para a auto interrogação, a ideia é criar perguntas sobre o que acabou de estudar e tentar respondê-las com as suas próprias palavras. Assim, o cérebro também se esforça para lembrar de tudo o que foi visto e compreender o material de forma mais profunda.
+
+                      <br><br><b>10. Releitura</b><br><br>
+
+                      A releitura nada mais é do que uma espécie de revisão, porém com bastante foco.
+                      <br><br>
+                      O que ocorre é que ao lermos um texto pela primeira vez, nosso cérebro entende o contexto geral do que é apresentado. Porém, quanto mais vezes lemos o mesmo conteúdo, mais percebemos detalhes e informações que haviam passado despercebidos anteriormente.
+                      <br><br></p>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+   

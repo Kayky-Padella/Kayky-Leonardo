@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+        
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+
+      .btn{
+          font-size: 22px;
+          font-weight: 700;
+      }
+
+      .navbar {
+        padding-top: 22px;
+        padding-bottom: 22px; 
+        font-size: 20px;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+       font-weight: bold;
+      }
+     </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+    <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="comunicante">
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <h1> Bem-vindo ao Nosso Site de Preparação para o ENEM!</h1>
+                <p class="text4" align ="justify">Você está prestes a embarcar em uma jornada emocionante em direção ao sucesso acadêmico e profissional, e estamos aqui para ajudá-lo em cada passo do caminho. O Exame Nacional do Ensino Médio (ENEM) é uma etapa crucial em sua vida educacional, e reconhecemos a importância de uma preparação sólida e eficaz.
+                    Nosso site foi cuidadosamente projetado para fornecer a você os recursos necessários para enfrentar o ENEM com confiança e preparação.<br><br>
+                    
+                    Como, Simulados Realistas: Nada prepara melhor para o ENEM do que a prática realista. Em nosso site, você encontrará uma variedade de simulados cuidadosamente elaborados para replicar fielmente a experiência do exame. <br><br>Teste seus conhecimentos, familiarize-se com o formato do ENEM e identifique áreas que precisam de mais atenção.
+                    Dicas e Estratégias de Estudo: Maximizar seu tempo de estudo é fundamental para o sucesso no ENEM. Por isso, fornecemos uma série de dicas e estratégias comprovadas para ajudá-lo a otimizar seu tempo, manter a motivação e enfrentar o exame com confiança.
+                    Comunidade de Apoio: Sabemos que o apoio de seus colegas pode fazer toda a diferença durante a preparação para o ENEM.<br></p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <container>
+<br>
+            <div class="secao">
+                <div class="card-group">
+                <div class="card">
+                    <img src="imagem/enem.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title"><a href="estudo.html">Métodos de Estudo</a></h5>
+                    <p class="card-text"> Confira os principais métodos de estudo que estão ajudando milhares de jovens a serem aprovados em suas faculdades </p>
+                    
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagem/nem2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title"><a href="redacao.html">Redação</a></h5>
+                    <p class="card-text"> Confira as competências e as principais dicas de redação, para alcançar sua nota 1000! </p>
+                    
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagem/enem2020post.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Prática
+                    </h5>
+                    <p class="card-text">A prática leva a perfeição. Resolver questões e treinar redação é um dos caminhos mais seguros para alcançar grandes notas no ENEM.</p>
+            
+                    </div>
+                </div>
+                </div>
+        </div>
+        
+        <br><br>
+
+      </container>
+
+     <p class="text4" align="justify">
+
+      Aqui está o que oferecemos:
+                    Material de Estudo Abrangente: De matemática a redação, passando por ciências humanas e da natureza, oferecemos uma vasta gama de recursos de estudo para todas as disciplinas cobradas no ENEM. Nossos guias detalhados, vídeos instrutivos e exercícios práticos ajudarão você a dominar cada tópico.<br><br>
+      
+      Em nosso site, você terá a oportunidade de se conectar com uma comunidade de estudantes dedicados, compartilhar experiências, fazer perguntas e receber apoio mútuo.
+                    Estamos comprometidos em ajudá-lo a alcançar seus objetivos no ENEM e além. Acesse nosso site hoje mesmo, mergulhe nos recursos disponíveis e inicie sua jornada rumo ao sucesso acadêmico e profissional!
+                    Prepare-se para o ENEM. Prepare-se para o futuro.</p>  <br><br>
+
+      <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+   

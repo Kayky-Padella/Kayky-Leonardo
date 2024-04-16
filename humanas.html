@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+    
+        <
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+
+        .btn{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .navbar {
+          padding-top: 22px;
+          padding-bottom: 22px; 
+          font-size: 20px;
+        }
+  
+        .navbar-brand {
+          font-size: 25px;
+         font-weight: bold;
+        }
+  
+        .textred {
+          
+          padding: 40px 10% 25px 10%; /* Cima, direita, baixo, esquerda*/
+          font-size: 19px;
+          
+        }
+  
+        .tes1 {
+  
+          font-weight: 600;
+        }
+  
+  
+        @media only screen and (max-width: 1000px) {
+  
+  .imgtm{
+    
+    margin-left: 1px;
+    text-align: center;
+    width: 100%;
+  } 
+        }
+  
+        .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: black; /* Altera a cor das setinhas para preto */
+      }
+  
+      .carousel-item {
+        text-align: center; /* Centraliza o conteúdo das perguntas */
+      }
+  
+      .resposta {
+        margin-top: 20px; /* Adiciona margem acima das respostas */
+      }
+  
+      .pergunta-container{
+  
+        margin-left: 12%;
+        margin-right:11%;
+      }
+  
+      .h5 {
+  
+        text-align: justify;
+      }
+       </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+      
+      <div align="justify" class="textred">
+
+        <font size="6"><b>Ciências Humanas e suas Tecnologias</b></font>
+        <br><br>
+        As Ciências Humanas e suas Tecnologias são uma das macroáreas do conhecimento cobradas no Enem, cobrindo as disciplinas de História, Geografia, Filosofia e Sociologia.
+<br><br>
+        As Ciências Humanas e suas Tecnologias são uma das grandes áreas do conhecimento cobradas na prova do Exame Nacional do Ensino Médio, o Enem. Essa macroárea é responsável por conhecimentos que englobam a ação dos seres humanos no tempo e no espaço, cada qual com suas particularidades.
+<br><br>
+        As quatro disciplinas que compõem as Ciências Humanas e suas tecnologias são: 
+<br><br>
+        <uL>
+      <li> História; </li>
+      <li>Geografia; </li>
+      <li>Filosofia; </li>
+      <li>Sociologia;</li></uL>
+<br>
+        Essa macroárea é composta por 45 questões de múltipla escolha, sendo fundamental que o candidato tenha um amplo conhecimento para sair-se bem na prova.
+<br><br>
+        O que cai na prova de Ciências Humanas e suas Tecnologias?
+<br><br>
+        Como já vimos, a prova de Ciências Humanas no Enem contém questões das disciplinas de História, Geografia, Filosofia e Sociologia. Ao todo, são 45 questões, e, a cada ano, a quantidade de questões de cada uma dessas disciplinas é alterada. Vamos conhecer um pouquinho dessas disciplinas.
+<br><br>
+      <b>História</b>
+<br><br>
+        Comumente falando, as pessoas entendem a História como a ciência que estuda os acontecimentos passados, mas essa visão nem sempre é corroborada pelos historiadores. Isso porque muitos entendem que o foco da História não é necessariamente os acontecimentos, mas sim as ações do ser humano no tempo.
+<br><br>
+        Outros já entendem que o foco da História é estudar as transformações pelas quais a sociedade humana passou ao longo do tempo. De toda forma, a História enquanto área do conhecimento humano surgiu na Antiguidade, sendo uma criação dos gregos antigos. Heródoto e Tucídides são dois importantes historiadores desse período.
+<br><br>
+        Entre os assuntos que mais são cobrados em História no Enem, estão: 
+<br><br>
+<uL>
+  <li>Segundo Reinado;</li>
+  <li>Era Vargas; </li>
+  <li>Ditadura Militar; </li>
+  <li>Grécia e Roma Antiga;</li>
+  <li>Nazismo e Fascismo;</li>
+  <li>Colonização do Brasil.</li>
+</uL>
+<br>
+    
+
+      <b>Geografia</b>
+<br><br>
+      A Geografia é a ciência responsável pelo estudo do espaço geográfico, procurando entender os aspectos físicos da Terra, embora também aborde os impactos que a humanidade causa no meio que está inserida. A Geografia também procura estudar e entender as relações humanas nos aspectos econômico, político, entre outros.
+<br><br>
+      Entre os assuntos mais cobrados em Geografia no Enem, estão:
+      <uL>
+        <li>Questões ambientais; </li>
+        <li>Urbanização;</li>
+        <li>Globalização; </li>
+        <li>Grécia e Roma Antiga;</li>
+        <li>Industrialização;</li>
+        <li>Fases do capitalismo</li>
+      </uL>
+
+<br>
+
+      <b>Filosofia</b>
+<br><br>
+      A Filosofia é uma área do conhecimento responsável por fazer questionamentos sobre assuntos inerentes à realidade da vida humana, tais como: a existência, a razão, os valores. Essa área do conhecimento se propõe a questionar convicções e valores humanos, estabelecendo uma discussão e definindo conceitos sobre essas questões.
+<br><br>
+      Entre os assuntos da Filosofia mais cobrados no Enem, estão: 
+      <uL>
+        <li>Filosofia pré-socrática;</li>
+        <li>Filosofia moderna; </li>
+        <li>Ética; </li>
+        <li>Escola de Frankfurt;</li>
+        <li>Filosofia medieval.</li>
+      </uL>
+<br>
+
+      <b>Sociologia</b>
+<br><br>
+      A Sociologia é um ramo do conhecimento que estuda o comportamento humano, as interações sociais, os detalhes da vida em comunidade, as questões da cultura, entre outros. Os estudos da Sociologia também são importantes para que problemas sociais relevantes possam ser identificados e ações governamentais possam ser estabelecidas a fim de contorná-los.
+<br><br>
+      Entre os assuntos de Sociologia mais cobrados no Enem, estão:
+      <uL>
+        <li>Mundo do trabalho; </li>
+        <li>Ideologia;</li>
+        <li>Movimentos Sociais</li>
+        <li>Cidadania</li>
+        <li>Política, Estado e Governo</li>
+      </uL>
+<br>
+        <div class="tes1">Preparamos agora um teste com 10 questões que mais caem da área de humanas na prova do ENEM:</div>
+   
+        <br>
+
+        <div id="carouselExampleControls" data-interval="false" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="pergunta-container">
+    
+                <br><h4><b>Questão 1</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2020) Sexto rei sumério (governante entre os séculos XVIII e XVII a.C.) e nascido em Babel, “Khammu-rabi” (pronúncia em babilônio) foi fundador do I Império Babilônico (correspondente ao atual Iraque), unificando amplamente o mundo mesopotâmico, unindo os semitas e os sumérios e levando a Babilônia ao máximo esplendor. O nome de Hamurabi permanece indissociavelmente ligado ao código jurídico tido como o mais remoto já descoberto: o Código de Hamurabi. O legislador babilônico consolidou a tradição jurídica, harmonizou os costumes e estendeu o direito e a lei a todos os súditos.
+                    Disponível em: www.direitoshumanos.usp.br. Acesso em: 12 fev. 2013 (adaptado).<br><br>
+
+                    Nesse contexto de organização da vida social, as leis contidas no Código citado tinham o sentido de:<br><br>
+
+                    A) assegurar garantias individuais aos cidadãos livres.<br>
+                    B) tipificar regras referentes aos atos dignos de punição.<br>
+                    C) conceder benefícios de indulto aos prisioneiros de guerra.<br>
+                    D) promover distribuição de terras aos desempregados urbanos.<br>
+                    E) conferir prerrogativas políticas aos descendentes de estrangeiros.<br><br>
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(1)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> B) tipificar regras referentes aos atos dignos de punição.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+                
+                <br><h4><b>Questão 2</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) Durante o Estado Novo, os encarregados da propaganda procuraram aperfeiçoar-se na arte da empolgação e envolvimento das “multidões” através das mensagens políticas. Nesse tipo de discurso, o significado das palavras importa pouco, pois, como declarou Goebbels, “não falamos para dizer alguma coisa, mas para obter determinado efeito”.<br>
+                  CAPELATO, M. H. Propaganda política e controle dos meios de comunicação. In: PANDOLFI, D. (Org.). Repensando o Estado Novo. Rio de Janeiro: FGV, 1999.<br><br>
+
+                  O controle sobre os meios de comunicação foi uma marca do Estado Novo, sendo fundamental à propaganda política, na medida em que visava:<br><br>
+
+                  A) conquistar o apoio popular na legitimação do novo governo.<br>
+                  B) ampliar o envolvimento das multidões nas decisões políticas.<br>
+                  C) aumentar a oferta de informações públicas para a sociedade civil.<br>
+                  D) estender a participação democrática dos meios de comunicação no Brasil.<br>
+                  E) alargar o entendimento da população sobre as intenções do novo governo.<br><br>
+                  
+                </p>
+                </h5>
+
+                <button class="btn btn-primary" onclick="mostrarResposta(2)">Ver Resposta</button>
+                <div class="resposta" id="resposta2" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> A) conquistar o apoio popular na legitimação do novo governo.
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+                
+                <br><h4><b>Questão 3</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) O terremoto de 8,8 na escala Richter que atingiu a costa oeste do Chile, em fevereiro, provocou mudanças significativas no mapa da região. Segundo uma análise preliminar, toda a cidade de Concepción se deslocou pelo menos três metros para o oeste. Buenos Aires moveu-se cerca de 2,5 centímetros para oeste, enquanto Santiago, mais próxima do local do evento, deslocou-se quase 30 centímetros para o oeste-sudoeste. As cidades de Valparaíso, no Chile, e Mendoza, na Argentina, também tiveram suas posições alteradas significativamente (13,4 centímetros e 8,8 centímetros, respectivamente).<br><br>
+
+                  Revista InfoGNSS, Curitiba, ano 6, n. 31, 2010.<br><br>
+
+                  No texto, destaca-se um tipo de evento geológico frequente em determinadas partes da superfície terrestre. Esses eventos estão concentrados em:<br><br>
+
+                  A) áreas vulcânicas, onde o material magmático se eleva, formando cordilheiras.<br>
+                  B) faixas costeiras, onde o assoalho oceânico recebe sedimentos, provocando tsunamis.<br>
+                  C) estreitas faixas de intensidade sísmica, no contato das placas tectônicas, próximas a dobramentos modernos.<br>
+                  D) escudos cristalinos, onde as rochas são submetidas aos processos de intemperismo, com alterações bruscas de temperatura.<br>
+                  E) áreas de bacias sedimentares antigas, localizadas no centro das placas tectônicas, em regiões conhecidas como pontos quentes.<br><br>
+                  
+                </p>
+                </h5>
+
+                <button class="btn btn-primary" onclick="mostrarResposta(3)">Ver Resposta</button>
+                <div class="resposta" id="resposta3" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) estreitas faixas de intensidade sísmica, no contato das placas tectônicas, próximas a dobramentos modernos.
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 4 </b></h4><br>
+                <h5 ><p align="justify">
+
+                  (Enem/2020) Adão, ainda que supuséssemos que suas faculdades racionais fossem inteiramente perfeitas desde o início, não poderia ter inferido da fluidez e transparência da água que ela o sufocaria, nem da luminosidade e calor do fogo que este poderia consumi-lo. Nenhum objeto jamais revela, pelas qualidades que aparecem aos sentidos, nem as causas que o produziram, nem os efeitos que dele provirão; e tampouco nossa razão é capaz de extrair, sem auxílio da experiência, qualquer conclusão referente à existência efetiva de coisas ou questões de fato.<br><br>
+                  HUME, D. Uma investigação sobre o entendimento humano. São Paulo: Unesp, 2003.<br><br>
+
+                  Segundo o autor, qual é a origem do conhecimento humano?<br><br>
+
+                  A) A potência inata da mente.<br>
+                  B) A revelação da inspiração divina.<br>
+                  C) O estudo das tradições filosóficas.<br>
+                  D) A vivência dos fenômenos do mundo.<br>
+                  E) O desenvolvimento do raciocínio abstrato.<br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(4)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b>  D) A vivência dos fenômenos do mundo.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 5</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) Art. 231. São reconhecidos aos índios sua organização social, costumes, línguas, crenças e tradições, e os direitos originários sobre as terras que tradicionalmente ocupam, competindo à União demarcá-las, proteger e fazer respeitar todos os seus bens.<br><br>
+
+                  BRASIL. Constituição da República Federativa do Brasil de 1988. Disponível em: www.planalto.gov.br. Acesso em: 27 abr. 2017.<br><br>
+                  
+                  A persistência das reivindicações relativas à aplicação desse preceito normativo tem em vista a vinculação histórica fundamental entre<br><br>
+                  
+                  A) etnia e miscigenação racial.<br>
+                  B) sociedade e igualdade jurídica.<br>
+                  C) espaço e sobrevivência cultural.<br>
+                  D) progresso e educação ambiental.<br>
+                  E) bem-estar e modernização econômica.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(5)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) espaço e sobrevivência cultural.
+
+
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 6 </b></h4><br>
+                <h5 ><p align="justify">
+
+                  (Enem/2015)<br><br>
+
+                  TEXTO I<br><br>
+
+                  Em todo o país a lei de 13 de maio de 1888 libertou poucos negros em relação à população de cor. A maioria já havia conquistado a alforria antes de 1888, por meio de estratégias possíveis. No entanto, a importância histórica da lei de 1888 não pode ser mensurada apenas em termos numéricos. O impacto que a extinção da escravidão causou numa sociedade constituída a partir da legitimidade da propriedade sobre a pessoa não cabe em cifras.<br><br>
+
+                  ALBUQUERQUE. W. O jogo da dissimulação: Abolição e cidadania negra no Brasil. São Paulo: Cia. das Letras, 2009 (adaptado).<br><br>
+
+                  TEXTO II<br><br>
+
+                  Nos anos imediatamente anteriores à Abolição, a população livre do Rio de Janeiro se tornou mais numerosa e diversificada. Os escravos, bem menos numerosos que antes, e com os africanos mais aculturados, certamente não se distinguiam muito facilmente dos libertos e dos pretos e pardos livres habitantes da cidade. Também já não é razoável presumir que uma pessoa de cor seja provavelmente cativa, pois os negros libertos e livres poderiam ser encontrados em toda parte.<br><br>
+
+                  CHALHOUB, S. Visões da liberdade: uma história das últimas décadas da escravidão na Corte. São Paulo: Cia. das Letras, 1990 (adaptado).<br><br>
+
+                  Sobre o fim da escravidão no Brasil, o elemento destacado no Texto I que complementa os argumentos apresentados no Texto II é o(a)<br><br>
+
+                  a) variedade das estratégias de resistência dos cativos.<br>
+                  b) controle jurídico exercido pelos proprietários.<br>
+                  c) inovação social representada pela lei.<br>
+                  d) ineficácia prática da libertação.<br>
+                  e) significado político da Abolição.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(6)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> E) significado político da Abolição. 
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 7 </b></h4><br>
+                <h5 ><p align="justify">
+
+                  O Brasil tem a maior parte do seu território localizado geograficamente no Hemisfério Sul, entre a linha do Equador e o Trópico de Capricórnio.
+
+                  Marque a alternativa que NÃO apresenta climas do Brasil.<br><br>
+
+                  a) Tropical Atlântico e Tropical de Altitude<br>
+                  b) Temperado e Mediterrâneo<br>
+                  c) Equatorial e Tropical<br>
+                  d) Subtropical e Semiárido<br>
+                  e) Temperado e Tropical de Altitude<br><br>
+
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(7)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> B) Temperado e mediterrâneo
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 8 </b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) A moralidade, Bentham exortava, não é uma questão de agradar a Deus, muito menos de fidelidade a regras abstratas. A moralidade é a tentativa de criar a maior quantidade de felicidade possível neste mundo. Ao decidir o que fazer, deveríamos, portanto, perguntar qual curso de conduta promoveria a maior quantidade de felicidade para todos aqueles que serão afetados.
+                  RACHELS, J. Os elementos da filosofia moral. Barueri-SP: Manole, 2006.<br><br>
+
+                  Os parâmetros da ação indicados no texto estão em conformidade com uma<br><br>
+
+                    A) fundamentação científica de viés positivista.<br>
+                    B) convenção social de orientação normativa.<br>
+                    C) transgressão comportamental religiosa.<br>
+                    D) racionalidade de caráter pragmático.<br>
+                    E) inclinação de natureza passional.<br><br>
+
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(8)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> D) racionalidade de caráter pragmático.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 9</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) Uma questão de tal natureza transforma o ouvinte; o contato de Sócrates paralisa e embaraça; leva a refletir sobre si mesmo, a imprimir à atenção uma direção incomum: os temperamentais, como Alcibíades, sabem que encontrarão junto dele todo o bem de que são capazes, mas fogem porque receiam essa influência poderosa, que os leva a censurarem. É sobretudo a esses jovens, muitos quase crianças, que ele tenta imprimir sua orientação.<br><br>
+
+                  BRÉHIER, E. História da Filosofia. São Paulo: Mestre Jou, 1977.<br><br>
+                  
+                  O texto evidencia características do modo de vida socrático, que se baseava na<br><br>
+                  
+                  A) contemplação da tradição mítica.<br>
+                  B) sustentação do método dialético.<br>
+                  C) relativização do saber verdadeiro.<br>
+                  D) valorização da argumentação retórica.<br>
+                  E) investigação dos fundamentos da natureza.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(9)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> B) sustentação do método dialético.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b> Questão 10</b></h4><br>
+                <h5 ><p align="justify">
+
+                  (Enem/2017) O terremoto de 8,8 na escala Richter que atingiu a costa oeste do Chile, em fevereiro, provocou mudanças significativas no mapa da região. Segundo uma análise preliminar, toda a cidade de Concepción se deslocou pelo menos três metros para o oeste. Buenos Aires moveu-se cerca de 2,5 centímetros para oeste, enquanto Santiago, mais próxima do local do evento, deslocou-se quase 30 centímetros para o oeste-sudoeste. As cidades de Valparaíso, no Chile, e Mendoza, na Argentina, também tiveram suas posições alteradas significativamente (13,4 centímetros e 8,8 centímetros, respectivamente).<br><br>
+
+                  Revista InfoGNSS, Curitiba, ano 6, n. 31, 2010.<br><br>
+
+                  No texto, destaca-se um tipo de evento geológico frequente em determinadas partes da superfície terrestre. Esses eventos estão concentrados em<br><br>
+
+                  A) áreas vulcânicas, onde o material magmático se eleva, formando cordilheiras.<br>
+                  B) faixas costeiras, onde o assoalho oceânico recebe sedimentos, provocando tsunamis.<br>
+                  C) estreitas faixas de intensidade sísmica, no contato das placas tectônicas, próximas a dobramentos modernos.<br>
+                  D) escudos cristalinos, onde as rochas são submetidas aos processos de intemperismo, com alterações bruscas de temperatura.<br>
+                  E) áreas de bacias sedimentares antigas, localizadas no centro das placas tectônicas, em regiões conhecidas como pontos quentes<br><br>
+                  
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(10)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) estreitas faixas de intensidade sísmica, no contato das placas tectônicas, próximas a dobramentos modernos
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+          function mostrarResposta(numero) {
+            var resposta = document.getElementById('resposta' + numero);
+            var botao = document.querySelector('[onclick="mostrarResposta(' + numero + ')"]');
+            if (resposta.style.display === 'none') {
+              resposta.style.display = 'block';
+              botao.textContent = 'Ocultar Resposta';
+            } else {
+              resposta.style.display = 'none';
+              botao.textContent = 'Ver Resposta';
+            }
+          }
+        </script>
+            
+          </a>
+        </div>
+    
+          </main>
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index4.js" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function mostrarResposta(numero) {
+        var resposta = document.getElementById('resposta' + numero);
+        if (resposta.style.display === 'none') {
+          resposta.style.display = 'block';
+        } else {
+          resposta.style.display = 'none';
+        }
+      }
+    </script>  
+  
+  </body>
+    </html>
+   

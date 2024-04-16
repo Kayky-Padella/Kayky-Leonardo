@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+        <script src="index.js" async></script>
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+
+      .btn{
+          font-size: 22px;
+          font-weight: 700;
+      }
+      
+      .navbar {
+        padding-top: 22px;
+        padding-bottom: 22px; 
+        font-size: 20px;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+       font-weight: bold;
+      }
+
+      .textred {
+        
+        padding: 40px 10% 25px 10%; /* Cima, direita, baixo, esquerda*/
+        font-size: 19px;
+      
+        
+      }
+
+      .imgtm{
+        width: 80%;
+        border: 1px solid black;
+      
+        }
+
+        .compt {
+
+          width: 80%;
+
+
+        }
+
+      @media only screen and (max-width: 1000px) {
+
+        .imgtm{
+          
+          margin-left: 1px;
+          text-align: center;
+          width: 100%;
+        }
+
+        .message {
+
+          font-size: 17px;
+        }
+
+        .compt {
+
+          width: 100%;
+        }
+
+        .textred {
+        
+        font-size: 14px;
+      }
+
+      .navbar{
+
+        font-size: 17px;      }
+
+        .btn {
+
+          font-size: 17px; 
+        }
+
+        .copyright {
+
+          font-size: 17px;
+        }
+
+        .list-unstyled {
+          font-size: 17px;
+        }
+
+
+      }
+
+
+     </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+<br>
+    <main>
+      
+      <div align="justify" class="textred">
+        <font size="6"><b>Prova de Redação</b></font><br><br>
+        Uma das principais dificuldades dos estudantes que vão fazer a prova do Exame Nacional do Ensino Médio (Enem) é como fazer a redação. Para isso, é preciso entender como é a redação do Enem, suas características e exigências.
+        A redação do Enem é composta por uma frase-tema, geralmente de um problema atual da sociedade brasileira, e cobra dos participantes uma proposta de intervenção. O texto deve ser escrito em até 30 linhas e na forma de dissertação argumentativa.
+        Diferente de alguns vestibulares, o Enem cobra uma única estrutura de texto, que é a dissertativo-argumentativa. A proposta de redação vem acompanhada por textos de apoio, que podem ser pesquisas científicas, notícias, quadrinhos ou outras ilustrações.
+<br><br><center> <img class="imgtm" src="imagem/tm.PNG"> </center><br><br>
+        Um bom desempenho na redação pode fazer diferença no resultado final do Exame Nacional do Ensino Médio (Enem). Para obter uma nota alta, o candidato deve seguir alguns critérios avaliados pelos organizadores da prova. O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep), que realiza o exame, preparou uma cartilha com as principais dias aos candidatos.
+      A redação é cobrada no primeiro dia do Enem, em 3 de novembro. Na oportunidade, também são realizadas as provas de Linguagens e Códigos e Ciências Humanas.
+<br><br>
+      Conheça as cinco competências cobradas pelo Inep na redação:
+<br><br>
+      <b>1. Domínio da escrita formal da língua portuguesa</b>
+<br><br>
+      É avaliado se a redação do participante está adequada às regras de ortografia, como acentuação, ortografia, uso de hífen, emprego de letras maiúsculas e minúsculas e separação silábica. Ainda são analisadas a regência verbal e nominal, concordância verbal e nominal, pontuação, paralelismo, emprego de pronomes e crase.
+<br><br>
+      São seis níveis de desempenho:
+
+<br><br>
+    <div class="compt">
+      <img  class="compt"src="imagem/comp1.jpg">
+    </div>
+<br><br>
+
+      <b>2. Compreender o tema e não fugir do que é proposto</b>
+<br><br>
+      Avalia as habilidades integradas de leitura e de escrita do candidato. O tema constitui o núcleo das ideias sobre as quais a redação deve ser organizada e é caracterizado por ser uma delimitação de um assunto mais abrangente.
+<br><br>
+      Eis os seis níveis de desempenho:
+
+<br><br>
+    <div class="compt">
+      <img  class="compt" src="imagem/comp2.jpg">
+    </div>
+<br><br>
+
+      <b>3. Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista</b>
+<br><br>
+      O candidato precisa elaborar um texto que apresente, claramente, uma ideia a ser defendida e os argumentos que justifiquem a posição assumida em relação à temática da proposta da redação. Trata da coerência e da plausibilidade entre as ideias apresentadas no texto, o que é garantido pelo planejamento prévio à escrita, ou seja, pela elaboração de um projeto de texto.
+<br><br>
+      Eis os seis níveis de desempenho:
+
+<br><br>
+    <div class="compt">
+      <img  class="compt" src="imagem/comp3.jpg">
+    </div>
+<br><br>
+
+      <b>4. Conhecimento dos mecanismos linguísticos necessários para a construção da argumentação</b>
+<br><br>
+      São avaliados itens relacionados à estruturação lógica e formal entre as partes da redação. A organização textual exige que as frases e os parágrafos estabeleçam entre si uma relação que garanta uma sequência coerente do texto e a interdependência entre as ideias.
+<br><br>
+      Preposições, conjunções, advérbios e locuções adverbiais são responsáveis pela coesão do texto porque estabelecem uma inter-relação entre orações, frases e parágrafos. Cada parágrafo será composto por um ou mais períodos também articulados. Cada ideia nova precisa estabelecer relação com as anteriores.
+<br><br>
+      Abaixo, seguem os seis níveis de desempenho:
+
+<br><br>
+<div class="compt">
+      <img  class="compt" src="imagem/comp4.jpg">
+    </div>
+<br><br>
+
+      <b>5. Respeito aos direitos humanos</b>
+<br><br>
+      Apresentar uma proposta de intervenção para o problema abordado que respeite os direitos humanos. Propor uma intervenção para o problema apresentado pelo tema significa sugerir uma iniciativa que busque, mesmo que minimamente, enfrentá-lo. A elaboração de uma proposta de intervenção na prova de redação do Enem representa uma ocasião para que o candidato demonstre o preparo para o exercício da cidadania, para atuar na realidade em consonância com os direitos humanos.
+<br><br>
+      Abaixo, seguem os seis níveis de desempenho:
+
+<br><br>
+<div class="compt">
+      <img class="compt" src="imagem/comp5.jpg">
+</div>
+<br><br>
+
+      </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Mensagem</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+   

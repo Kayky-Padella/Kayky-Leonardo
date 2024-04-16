@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+
+        .btn{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .navbar {
+          padding-top: 22px;
+          padding-bottom: 22px; 
+          font-size: 20px;
+        }
+  
+        .navbar-brand {
+          font-size: 25px;
+         font-weight: bold;
+        }
+  
+        .textred {
+          
+          padding: 40px 10% 25px 10%; /* Cima, direita, baixo, esquerda*/
+          font-size: 19px;
+          
+        }
+  
+        .tes1 {
+  
+          font-weight: 600;
+        }
+  
+  
+        @media only screen and (max-width: 1000px) {
+  
+  .imgtm{
+    
+    margin-left: 1px;
+    text-align: center;
+    width: 100%;
+  } 
+        }
+  
+        .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: black; /* Altera a cor das setinhas para preto */
+      }
+  
+      .carousel-item {
+        text-align: center; /* Centraliza o conteúdo das perguntas */
+      }
+  
+      .resposta {
+        margin-top: 20px; /* Adiciona margem acima das respostas */
+      }
+  
+      .pergunta-container{
+  
+        margin-left: 12%;
+        margin-right:11%;
+      }
+  
+      .h5 {
+  
+        text-align: justify;
+      }
+       </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item" href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+      
+      <div align="justify" class="textred">
+
+        <font size="6"><b>Prova de Ciências da Natureza</b></font>
+        <br><br>
+        A área de conhecimento envolve as disciplinas de Biologia, Física e Química. Para ajudar os estudantes na preparação para o exame, O que mais cai em Ciências da Natureza no Enem Veja os conteúdos destacados pelo estudo dos SAS Plataforma Educação sobre os assuntos que mais caem nas provas do Enem das disciplinas de Ciências da Natureza:
+<br><br>
+      <b>Biologia</b>
+<br><br>
+        Entre os assuntos mais recorrentes nas questões de Biologia estão as influências e impactos dos seres humanos na natureza, Histologia, Fisiologia, Citologia e Ecologia.
+<br><br>
+      Na Ecologia, os estudantes devem se ater aos conceitos de nicho, habitat, cadeia alimentar, temáticas de sustentabilidades e ciclos biogeoquímicos.
+<br><br>
+      Quanto à Fisiologia, a gravidez e o funcionamento do corpo humano, já na Citologia, os processos vitais, estrutura e funcionamento das células.
+<br><br>   
+      Entre os assuntos de Biologia mais cobrados no Enem, estão:
+      <uL>
+        <li>Humanidade e ambiente</li>
+        <li>Histologia e Fisiologia</li>
+        <li>Cistologia</li>
+        <li>Fundamentos da Ecologia</li>
+        <li>Biotecnologia</li>
+      </uL>
+<br>
+
+      <b>Física</b>
+<br><br>
+    Para a Física destaca-se que é interessante o estudante compreender, antes de tudo, os conceitos básicos da matéria e os principais conteúdos cobrados, para depois se aprofundar nos temas.
+<br><br>
+    Ao longo das edições do exame, a prova dessa disciplina costuma ser preenchida majoritamente pelos conteúdos de Mecânica e Eletricidade.
+<br><br>
+    Entre os assuntos de Física mais cobrados no Enem, estão:
+    <uL>
+      <li>Eletricidade e Energia</li>
+      <li>Ondulatória</li>
+      <li>Mecânica</li>
+      <li>Termologia</li>
+      <li>Óptica</li>
+    </uL>
+<br>
+
+      <b>Química</b>
+<br><br>
+      A Química Geral é a base da Química inteira, a Físico-Química contém interdisciplinariedade entre os conteúdos e a Química Orgânica se atém aos estudos dos compostos de carbono.
+<br><br>
+      É essencial entender conceitos básicos como o estudo da matéria, tabela periódica, funcionamento da estrutura atômica e relações numéricas para as contas.
+<br><br>  
+      Entre os assuntos de Química mais cobrados no Enem, estão:
+      <uL>
+        <li>Eletricidade e Energia</li>
+        <li>Ondulatória</li>
+        <li>Mecânica</li>
+        <li>Termologia</li>
+        <li>Óptica</li>
+      </uL>
+  <br>
+        <div class="tes1">Preparamos agora um teste com 10 questões que mais caem da área de linguages nas provas do ENEM:</div>
+    
+    
+
+    <br><br>
+
+    <br><br>
+    <div class="tes1">Preparamos agora um teste com 10 questões que mais caem da área de Ciências da Natureza na prova do ENEM:</div>
+   
+        <br>
+
+        <div id="carouselExampleControls" data-interval="false" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 1</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2016) As proteínas de uma célula eucariótica possuem peptídeos sinais, que são sequências de aminoácidos responsáveis pelo seu endereçamento para as diferentes organelas, de acordo com suas funções. Um pesquisador desenvolveu uma nanopartícula capaz de carregar proteínas para dentro de tipos celulares específicos. Agora ele quer saber se uma nanopartícula carregada com uma proteína bloqueadora do ciclo de Krebs in vitro é capaz de exercer sua atividade em uma célula cancerosa, podendo cortar o aporte energético e destruir essas células.<br><br>
+
+                  Ao escolher essa proteína bloqueadora para carregar as nanopartículas, o pesquisador deve levar em conta um peptídeo sinal de endereçamento para qual organela?<br><br>
+
+                  a) Núcleo.<br>
+                  b) Mitocôndria.<br>
+                  c) Peroxissomo.<br>
+                  d) Complexo golgiense.<br>
+                  e) Retículo endoplasmático.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(1)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> B) Mitocôndria.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+               
+                <br><h4><b>Questão 2</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) Em algumas residências, cercas eletrificadas são utilizadas com o objetivo de afastar possíveis invasores. Uma cerca eletrificada funciona com uma diferença de potencial elétrico de aproximadamente 10 000 V. Para que não seja letal, a corrente que pode ser transmitida através de uma pessoa não deve ser maior do que 0,01 A. Já a resistência elétrica corporal entre as mãos e os pés de uma pessoa é da ordem de 1 000 Ω.<br><br>
+
+                  Para que a corrente não seja letal a uma pessoa que toca a cerca eletrificada, o gerador de tensão deve possuir uma resistência interna que, em relação à do corpo humano, é:<br><br>
+
+                  a) praticamente nula.<br>
+                  b) aproximadamente igual.<br>
+                  c) milhares de vezes maior.<br>
+                  d) da ordem de 10 vezes maior.<br>
+                  e) da rodem de 10 vezes menor.<br><br>
+
+                </p>
+                </h5>
+
+                <button class="btn btn-primary" onclick="mostrarResposta(2)">Ver Resposta</button>
+                <div class="resposta" id="resposta2" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) milhares de vezes maior.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+                
+                <br><h4><b>Questão 3</b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2017) Um fato corriqueiro ao se cozinhar arroz é o derramamento de parte da água de cozimento sobre a chama azul do fogo, mudando-a para uma chama amarela. Essa mudança de cor pode suscitar interpretações diversas, relacionadas às substâncias presentes na água de cozimento. Além do sal de cozinha (NaCl), nela se encontram carboidratos, proteínas e sais minerais.<br><br>
+
+                    Cientificamente, sabe-se que essa mudança de cor da chama ocorre pela:<br><br>
+
+                    a) reação do gás de cozinha com o sal, volatizando gás cloro.<br>
+                    b) emissão de fótons pelo sódio, excitado por causa da chama.<br>
+                    c) produção de derivado amarelo, pela reação com o carboidrato.<br>
+                    d) reação do gás de cozinha com a água, formando gás hidrogênio.<br>
+                    e) excitação das moléculas de proteínas, com formação de luz amarela.<br><br>
+
+                </p>
+                </h5>
+
+                <button class="btn btn-primary" onclick="mostrarResposta(3)">Ver Resposta</button>
+                <div class="resposta" id="resposta3" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> B) emissão de fótons pelo sódio, excitado por causa da chama.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b> Questão 4</b></h4><br>
+                <h5 ><p align="justify">
+
+                  (Enem/2019) A Mata Atlântica caracteriza-se por uma grande diversidade de epífitas, como as bromélias. Essas plantas estão adaptadas a esse ecossistema e conseguem captar luz, água e nutrientes mesmo vivendo sobre as árvores.<br><br>
+
+                  Essas espécies captam água do(a):<br><br>
+
+                  a) organismo das plantas vizinhas.<br>
+                  b) solo através de suas longas raízes.<br>
+                  c) chuva acumulada entre suas folhas.<br>
+                  d) seiva bruta das plantas hospedeiras.<br>
+                  e) comunidade que vive em seu interior.<br><br>
+                                    
+
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(4)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b>C) chuva acumulada entre suas folhas. 
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b> Questão 5</b></h4><br>
+                <h5 ><p align="justify">
+                  (Enem/2015) Uma grande virada na moderna história da agricultura ocorreu depois da Segunda Guerra Mundial. Após a guerra, os governos haviam se deparado com um enorme excedente de nitrato de amônio, ingrediente usado na fabricação de explosivos. A partir daí as fábricas de munição foram adaptadas para começar a produzir fertilizantes tendo como componente principal os nitratos.<br><br>
+
+                  No ciclo natural do nitrogênio, o equivalente ao principal componente desses fertilizantes industriais é produzido na etapa de:<br><br>
+
+                  a) nitratação.<br>
+                  b) nitrosação.<br>
+                  c) amonificação.<br>
+                  d) desnitrificação.<br>
+                  e) fixação biológica do N2.<br><br>
+
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(5)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> A) nitratação.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b> Questão 6</b></h4><br>
+                <h5 ><p align="justify">
+                 (Enem 2022) O sonorizador é um dispositivo físico implantado sobre a superfície de uma rodovia de modo que provoque uma trepidação e ruído quando da passagem de um veículo sobre ele, alertando para a situação atípica à frente, como obras, pedágios ou travessia de pedestres. Ao passar sobre os sonorizadores, a suspensão do veículo sofre vibrações que produzem ondas sonoras, resultando em um barulho peculiar. Considere um veículo que passe com velocidade constante igual a 108 km/h sobre um sonorizador cujas faixas são separadas por uma distância de 8 cm.<br><br>
+
+                  A frequência da vibração do automóvel percebida pelo condutor durante a passagem nesse sonorizador é mais próxima de:<br><br>
+
+                  a) 8,6 hertz.<br>
+                  b) 13,5 hertz.<br>
+                  c) 375 hertz.<br>
+                  d) 1 350 hertz.<br>
+                  e) 4860 hertz.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(6)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) 375 hertz.
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b> Questão 7</b></h4><br>
+                <h5 ><p align="justify">
+                  (Enem/2017) Um motorista que atende a uma chamada de celular é levado à desatenção, aumentando a possibilidade de acidentes ocorrerem em razão do aumento de seu tempo de reação. Considere dois motoristas, o primeiro atento e o segundo utilizando o celular enquanto dirige. Eles aceleram seus carros inicialmente a 1,00 m/s2 . Em resposta a uma emergência, freiam com uma desaceleração igual a 5,00 m/s2 . O motorista atento aciona o freio à velocidade de 14,0 m/s, enquanto o desatento, em situação análoga, leva 1,00 segundo a mais para iniciar a frenagem.<br><br>
+
+                  Que distância o motorista desatento percorre a mais do que o motorista atento, até a parada total dos carros?<br><br>
+
+                  a) 2,90 m<br>
+                  b) 14,0 m<br>
+                  c) 14,5 m<br>
+                  d) 15,0 m<br>
+                  e) 17,4 m<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(7)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> E) 17,4m
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 8 </b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (Enem/2014) Os botos-cinza (Sotalia guianensis), mamíferos da família dos golfinhos, são excelentes indicadores da poluição das áreas em que vivem, pois passam toda a sua vida - cerca de 30 anos - na mesma região. Além disso, a espécie acumula mais contaminantes em seu organismo, como o mercúrio, do que outros animais da sua cadeia alimentar.<br><br>
+
+                  Os botos-cinza acumulam maior concentração dessas substâncias porque:<br><br>
+
+                  a) são animais herbívoros.<br>
+                  b) são animais detritívoros.<br>
+                  c) são animais de grande porte.<br>
+                  d) digerem o alimento lentamente.<br>
+                  e) estão no topo da cadeia alimentar.<br><br>
+
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(8)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> E) estão no topo da cadeia alimentar.
+
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 9 </b></h4><br>
+                <h5 ><p align="justify">
+
+                  (Enem/2016) Em meados de 2003, mais de 20 pessoas morreram no Brasil após terem ingerido uma suspensão de sulfato de bário utilizada como contraste em exames radiológicos. O sulfato de bário é um sólido pouquíssimo solúvel em água, que não se dissolve mesmo na presença de ácidos. As mortes ocorreram porque um laboratório farmacêutico forneceu o produto contaminado com carbonato de bário, que é solúvel em meio ácido. Um simples teste para verificar a existência de íons bário solúveis poderia ter evitado a tragédia. Esse teste consiste em tratar a amostra com solução aquosa de HCl e, após filtrar para separar os compostos insolúveis de bário, adiciona-se solução aquosa de H2SO4 sobre o filtrado e observa-se por 30 min.<br><br>
+
+                A presença de íons bário solúveis na amostra é indicada pela:<br><br>
+
+                a) liberação de calor.<br>
+                b) alteração da cor para rosa.<br>
+                c) precipitação de um sólido branco.<br>
+                d) formação de gás nitrogênio.<br>
+                e) volatilização de gás cloro.<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(9)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> C) precipitação de um sólido branco.
+
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pergunta-container">
+    
+                
+                <br><h4><b>Questão 10 </b></h4><br>
+                <h5 ><p align="justify">
+                  
+                  (ENEM 2022)Um pai faz um balanço utilizando dois segmentos paralelos e iguais da mesma corda para fixar uma tábua a uma barra horizontal. Por segurança, opta por um tipo de corda cuja tensão de ruptura seja 25% superior à tensão máxima calculada nas seguintes condições:<br><br>
+
+                  O ângulo máximo atingido pelo balanço em relação à vertical é igual a 90º;<br><br>
+                  
+                  Os filhos utilizarão o balanço até que tenham uma massa de 24 kg.<br><br>
+                  
+                  Além disso, ele aproxima o movimento do balanço para o movimento circular uniforme, considera que a aceleração da gravidade é igual a 10 m/s2 e despreza forças dissipativas.<br><br>
+                  
+                  Qual é a tensão de ruptura da corda escolhida?<br><br>
+                  
+                  a) 120 N<br>
+                  b) 300 N<br>
+                  c) 360 N<br>
+                  d) 450 N<br>
+                  e) 900 N<br><br>
+
+                </p>
+                </h5>
+                
+                <button class="btn btn-primary" onclick="mostrarResposta(10)">Ver Resposta</button>
+                <div class="resposta" id="resposta1" style="display: none;">
+                  <h5 ><br><b><p align="justify">Resposta Correta:</b> D) 450 N
+
+
+                  </p><br></h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+          function mostrarResposta(numero) {
+            var resposta = document.getElementById('resposta' + numero);
+            var botao = document.querySelector('[onclick="mostrarResposta(' + numero + ')"]');
+            if (resposta.style.display === 'none') {
+              resposta.style.display = 'block';
+              botao.textContent = 'Ocultar Resposta';
+            } else {
+              resposta.style.display = 'none';
+              botao.textContent = 'Ver Resposta';
+            }
+          }
+        </script>
+            
+          </a>
+        </div>
+    
+          </main>
+
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function mostrarResposta(numero) {
+        var resposta = document.getElementById('resposta' + numero);
+        if (resposta.style.display === 'none') {
+          resposta.style.display = 'block';
+        } else {
+          resposta.style.display = 'none';
+        }
+      }
+    </script>  
+  
+  </body>
+    </html>
+   

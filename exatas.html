@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu principal</title>
+     
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"  href="style2.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+
+        .btn{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .navbar {
+          padding-top: 22px;
+          padding-bottom: 22px; 
+          font-size: 20px;
+        }
+  
+        .navbar-brand {
+          font-size: 25px;
+         font-weight: bold;
+        }
+  
+        .textred {
+          
+          padding: 40px 10% 25px 10%; /* Cima, direita, baixo, esquerda*/
+          font-size: 19px;
+          
+        }
+  
+        .tes1 {
+  
+          font-weight: 600;
+        }
+
+        @media only screen and (max-width: 1000px) {
+  
+  .imgtm{
+    
+    margin-left: 1px;
+    text-align: center;
+    width: 100%;
+  } 
+        }
+  
+        .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: black; /* Altera a cor das setinhas para preto */
+      }
+  
+      .carousel-item {
+        text-align: center; /* Centraliza o conteúdo das perguntas */
+      }
+  
+      .resposta {
+        margin-top: 20px; /* Adiciona margem acima das respostas */
+      }
+  
+      .pergunta-container{
+  
+        margin-left: 12%;
+        margin-right:11%;
+      }
+  
+      .h5 {
+  
+        text-align: justify;
+      }
+       </style>
+    </head>
+
+    <script>
+      function abrirPagina(){
+        window.open("index.html")
+      }
+
+      function login(){
+        
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        if( user === "LK-CHEF" && senha === "123"){
+            alert("Login Bem-Sucedido!");
+            abrirPagina();
+        } else {
+          alert("Usuário ou Senha Inválidos. Tente Novamente.");
+        }
+        }
+
+        function dado(){
+          alert("Usuario = LK-CHEF  |  Senha = 123");
+          user.focus();
+        }
+
+        
+    </script>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto"> <!-- Alteração aqui -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estudo.html">Estudo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Matérias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="redacao.html">Redação</a></li>
+                <li><a class="dropdown-item" href="linguagens.html">Linguagens</a></li>
+                <li><a class="dropdown-item"  href="exatas.html">Ciências Exatas</a></li>
+                <li><a class="dropdown-item" href="natureza.html">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="humanas.html">Ciências Humanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            
+            <button class="btn btn-outline-success me-3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja se cadastrar, para receber atualizações?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="user" class="form-label">Digite seu Usuário</label>
+                        <input type="text" class="form-control" id="user" name="user" value="" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="senha" class="form-label">Digite o código</label>
+                        <input type="password" class="form-control" id="senha" name="senha" value="" required autofocus>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
+                    <button type="button" class="btn btn-outline-success me-3"class="btn btn-primary" onclick="login()">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+    <br><br><br><br>
+    
+    <main>
+
+      
+      <div align="justify" class="textred">
+
+        <font size="6"><b>Ciências Exatas (Matemática)</b></font>
+        <br><br>
+        A prova de exatas do Enem — composta por questões de matemática — é bastante diversificada, tanto em relação ao conteúdo cobrado como ao nível de dificuldade das questões.
+<br><br>
+      O tempo dispensado em cada questão deve ser observado. No total, são 45 questões de ciências da natureza e outras 45 de matemática e suas tecnologias para cinco horas de prova — cerca de 3 minutos por questão.
+<br><br>
+      <b>Matemática</b>
+<br><br>
+      O professores de matemática destacam que, para se sair bem, é importante estudar aritmética, funções, geometria, escala, razões, proporções, estatística, além de gráficos e tabelas. "A aritmética desempenha um papel fundamental. Esse ramo da matemática se concentra nas operações básicas, como soma, subtração, multiplicação e divisão."
+<br><br>
+      Outro tópico recorrente, geralmente de nível de dificuldade mais acessível, é a leitura de gráficos e de tabelas. Nesse contexto, os alunos devem compreender os elementos-chave de um gráfico, observar detalhes como a escala dos eixos, as unidades presentes e as informações representadas nos gráficos.
+<br><br>
+    
+    <div id="carouselExampleControls"data-interval="false" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="pergunta-container">
+
+            <br><h4><b>Questão 1</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem 2022) Uma cozinheira produz docinhos especiais por encomenda. Usando uma receita-base de massa, ela prepara uma porção, com a qual produz 50 docinhos maciços de formato esférico, com 2 cm de diâmetro. Um cliente encomenda 150 desses docinhos, mas pede que cada um tenha formato esférico com 4 cm de diâmetro. A cozinheira pretende preparar o número exato de porções da receita-base de massa necessário para produzir os docinhos dessa encomenda.<br><br>
+
+              Quantas porções da receita-base de massa ela deve preparar para atender esse cliente?<br><br>
+
+              a) 2<br>
+              b) 3<br>
+              c) 6<br>
+              d) 12<br>
+              e) 24<br><br>
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(1)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> E) 24
+                   </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+            
+            <br><h4><b>Questão 2</b></h4><br>
+            <h5 ><p align="justify">
+              
+              Enem (2022) Ao escutar à notícia de que um filme recém-lançado arrecadou, no primeiro mês de lançamento, R$ 1,35 bilhão em bilheteria, um estudante escreveu corretamente o número que representa essa quantia, com todos os seus algarismos.<br><br>
+
+              O número escrito pelo estudante foi<br><br>
+
+              a) 135 000,00<br>
+              b) 1 350 000,00<br>
+              c) 13 500 000,00<br>
+              d) 135 000 000,00<br>
+              e) 1 350 000 000,00<br><br> 
+            </p>
+            </h5>
+
+            <button class="btn btn-primary" onclick="mostrarResposta(2)">Ver Resposta</button>
+            <div class="resposta" id="resposta2" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> E) 1 350 000 000,00
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+            
+            <br><h4><b>Questão 3</b></h4><br>
+            <h5 ><p align="justify">
+              
+              Uma montadora de automóveis divulgou que oferta a seus clientes mais de 1 000 configurações diferentes de carro, variando o modelo, a motorização, os opcionais e a cor do veículo. Atualmente, ela oferece 7 modelos de carros com 2 tipos de motores: 1.0 e 1.6. Já em relação aos opcionais, existem 3 escolhas possíveis: central multimídia, rodas de liga leve e bancos de couro, podendo o cliente optar por incluir um, dois, três ou nenhum dos opcionais disponíveis.<br><br>
+
+              Para ser fiel à divulgação feita, a quantidade mínima de cores que a montadora deverá disponibilizar a seus clientes é:<br><br>
+
+              a) 8.<br>
+              b) 9.<br>
+              c) 11.<br>
+              d) 18.<br>
+              e) 24.<br><br>
+            </p>
+            </h5>
+
+            <button class="btn btn-primary" onclick="mostrarResposta(3)">Ver Resposta</button>
+            <div class="resposta" id="resposta3" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) 9
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 4 </b></h4><br>
+            <h5 ><p align="justify">
+              (ENEM 2021)Em uma loja, o preço promocional de uma geladeira é de R$ 1 000,00 para pagamento somente em dinheiro. Seu preço normal, fora da promoção, é 10% maior. Para pagamento feito com o cartão de crédito da loja, é dado um desconto de 2% sobre o preço normal.<br><br>
+
+              Uma cliente decidiu comprar essa geladeira, optando pelo pagamento com o cartão de crédito da loja. Ela calculou que o valor a ser pago seria o preço promocional acrescido de 8%. Ao ser informada pela loja do valor a pagar, segundo sua opção, percebeu uma diferença entre seu cálculo e o valor que lhe foi apresentado.<br><br>
+
+              O valor apresentado pela loja, comparado ao valor calculado pela cliente, foi<br><br>
+
+              a)R$ 2,00 menor.<br>
+              b)R$ 100,00 menor.<br>
+              c)R$ 200,00 menor.<br>
+              d)R$ 42,00 maior.<br>
+              e)R$ 80,00 maior.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(4)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> A) R$2,00 menor
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 5 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (ENEM - 2022)<br><br>
+
+                Foram convidadas 32 equipes para um torneio de futebol, que foram divididas em 8 grupos com 4 equipes, sendo que, dentro de um grupo, cada equipe disputa uma única partida contra cada uma das demais equipes de seu grupo. A primeira e a segunda colocadas de cada grupo seguem para realizar as 8 partidas da próxima fase do torneio, chamada oitavas de final. Os vencedores das partidas das oitavas de final seguem para jogar as 4 partidas das quartas de final. Os vencedores das quartas de final disputam as 2 partidas das semifinais, e os vencedores avançam para a grande final, que define a campeã do torneio.<br><br>
+
+                Pelas regras do torneio, cada equipe deve ter um período de descanso de, no mínimo, 3 dias entre dois jogos por ela disputados, ou seja, se um time disputar uma partida, por exemplo, num domingo, só poderá disputar a partida seguinte a partir da quinta-feira da mesma semana.<br>
+                <br>
+                O número mínimo de dias necessários para a realização desse torneio é<br><br>
+
+                a) 22.<br>
+                b) 25.<br>
+                c) 28.<br>
+                d) 48.<br>
+                e) 64.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(5)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) 25.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 6</b></h4><br>
+            <h5 ><p align="justify">
+              
+              (ENEM 2020)Um borrifador de atuação automática libera, a cada acionamento, uma mesma quantidade de inseticida. O recipiente desse produto, quando cheio, contém 360 mL de inseticida, que duram 60 dias se o borrifador permanecer ligado ininterruptamente e for acionado a cada 48 minutos.<br><br>
+
+                A quantidade de inseticida que é liberada a cada acionamento do borrifador, em mililitro, é:<br><br>
+
+                a) 0,125.<br>
+                b) 0,200.<br>
+                c) 4,800.<br>
+                d) 6,000.<br>
+                e)12,000.<br><br>
+
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(6)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) 0,200.
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 7 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (ENEM 2017)A caixa-d’água de um edifício terá a forma de um paralelepípedo retângulo reto com volume igual a 28 080 litros. Em uma maquete que representa o: edifício, a caixa-d’água tem dimensões 2 cm × 3,51 cm × 4 cm<br><br>
+
+              Dado: 1 dm³ = 1 L.<br><br>
+
+              A escala usada pelo arquiteto foi<br><br>
+
+              a) 1 : 10<br>
+              b) 1 : 100<br>
+              c) 1 : 1 000<br>
+              d) 1 : 10 000<br>
+              e) 1 : 100 000<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(7)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) 1 : 100
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 8 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (Enem 2020). Nos livros Harry Potter, um anagrama do nome do personagem “TOM MARVOLO RIDDLE” gerou a frase “I AM LORD VOLDEMORT”.<br><br>
+
+              Suponha que Harry quisesse formar todos os anagramas da frase “I AM POTTER”, de tal forma que as vogais e consoantes aparecessem sempre intercaladas, e sem considerar o espaçamento entre as letras. <br><br>
+              
+              Nessas condições, o número de anagramas formados é dado por<br><br>
+              
+              a) 9!<br>
+              b) 4! 5!<br>
+              c) 2 × 4! 5!<br>
+              d) 9! / 2<br>
+              e) 4! 5! / 2<br><br>
+              
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(8)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> E) 4! 5! / 2
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b> Questão 9</b></h4><br>
+            <h5 ><p align="justify">
+              (Enem 2017)Um morador de uma região metropolitana tem 50% de probabilidade de atrasar-se para o trabalho quando chove na região; caso não chova, sua probabilidade de atraso é de 25%. Para um determinado dia, o serviço de meteorologia estima em 30% a probabilidade da ocorrência de chuva nessa região.<br><br>
+
+              Qual é a probabilidade de esse morador se atrasar para o serviço no dia para o qual foi dada a estimativa de chuva?<br><br>
+
+              a) 0,075<br>
+              b) 0,150<br>
+              c) 0,325<br>
+              d) 0,600<br>
+              e) 0,800<br><br>
+
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(9)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> C) 0,325 
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="pergunta-container">
+
+            
+            <br><h4><b>Questão 10 </b></h4><br>
+            <h5 ><p align="justify">
+              
+              (ENEM - 2022)<br><br>
+
+                Foram convidadas 32 equipes para um torneio de futebol, que foram divididas em 8 grupos com 4 equipes, sendo que, dentro de um grupo, cada equipe disputa uma única partida contra cada uma das demais equipes de seu grupo. A primeira e a segunda colocadas de cada grupo seguem para realizar as 8 partidas da próxima fase do torneio, chamada oitavas de final. Os vencedores das partidas das oitavas de final seguem para jogar as 4 partidas das quartas de final. Os vencedores das quartas de final disputam as 2 partidas das semifinais, e os vencedores avançam para a grande final, que define a campeã do torneio.<br><br>
+
+                Pelas regras do torneio, cada equipe deve ter um período de descanso de, no mínimo, 3 dias entre dois jogos por ela disputados, ou seja, se um time disputar uma partida, por exemplo, num domingo, só poderá disputar a partida seguinte a partir da quinta-feira da mesma semana.<br>
+                <br>
+                O número mínimo de dias necessários para a realização desse torneio é<br><br>
+
+                a) 22.<br>
+                b) 25.<br>
+                c) 28.<br>
+                d) 48.<br>
+                e) 64.<br><br>
+
+            </p>
+            </h5>
+            
+            <button class="btn btn-primary" onclick="mostrarResposta(10)">Ver Resposta</button>
+            <div class="resposta" id="resposta1" style="display: none;">
+              <h5 ><br><b><p align="justify">Resposta Correta:</b> B) II
+
+              </p><br></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+          function mostrarResposta(numero) {
+            var resposta = document.getElementById('resposta' + numero);
+            var botao = document.querySelector('[onclick="mostrarResposta(' + numero + ')"]');
+            if (resposta.style.display === 'none') {
+              resposta.style.display = 'block';
+              botao.textContent = 'Ocultar Resposta';
+            } else {
+              resposta.style.display = 'none';
+              botao.textContent = 'Ver Resposta';
+            }
+          }
+        </script>
+            
+          </a>
+        </div>
+    
+          </main>
+
+          <br><br>
+
+    <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Cofira nosso Site!</b></h5>
+              <p class="message">Confira nossas dicas e quizes sobre como passar<br> na faculdade que você tanto deseja!<br>
+                Perguntas preparadas por professores renomados!</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+              <h5><b>Links Importantes</b></h5>
+              <ul class="list-unstyled">
+                <li><a data-bs-toggle="modal">Entrar</a></li>
+                <li><a href="estudo.html">Estudo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  mb-lg--1 text-center">
+              <p class="copyright"> Kayky e Leonardo 2024 &copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index2.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+   
